@@ -25,6 +25,7 @@ function HideMenu() {
     prevScrollpos = currentScrollPos;
   });
 }
+
 export default function website() {
   return (
     <html>
@@ -75,12 +76,12 @@ export default function website() {
         <img className="wave" src={wave} alt="wave" />
 
         <div id="about">
+        <img className="peaking" src={peaking} alt="a peaking cat" />
           <div className="about-box">
             <div className="slide-in">
               <div className="title-about"><h1>About Us</h1></div>
               <img className="squiggle" src={squiggle} alt="squiggle"></img>
             </div>
-            <div className="slide-left"><img className="peaking" src={peaking} alt="a peaking cat" /></div>
             <div className="fade-in">
               <div className="about-wrapper"><h3>
                 MechCat (short for MeCATronics) is a Dr. Norman Bethune Collegiate Institute robotics team competing in the First Tech Challenge (FTC) competition.
@@ -119,8 +120,9 @@ export default function website() {
           </div>
         </div>
         <div id="sponsor">
-          <div className="sponsor-box">
+          <div className="team-box">
           <div className="title-sponsor"><h1> Our Sponsors</h1></div>
+          <img className="squiggle" src={squiggle} alt="squiggle"></img>
           <div className="tom-brothers"></div>
           <div className="bethune"></div>
           </div>
@@ -176,8 +178,8 @@ export default function website() {
             </div>
             <div className="icon-box">
               <a href="https://www.youtube.com/@MechCat-Robotics">
-                <img src={yt} alt="youtube logo"></img
-                ></a>
+                <img src={yt} alt="youtube logo"></img>
+                </a>
               <a href="https://www.youtube.com/@MechCat-Robotics">
                 <p>@MechCat- Robotics</p>
               </a>

@@ -46,7 +46,7 @@ a {
 .nav-text-left {
   margin-left: 10px;
   margin-top: -40px;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: white;
   float: left;
 }
@@ -59,7 +59,7 @@ a {
 }
 
 .nav-text {
-  font-size: 20px;
+  font-size: 1.1rem;
   margin-right: 50px;
   margin-left: -10px;
   color: white;
@@ -67,7 +67,7 @@ a {
 }
 
 .nav-text:hover {
-  font-size: 20px;
+  font-size: 1.15rem;
   margin-right: 50px;
   margin-left: -10px;
   color: white;
@@ -123,7 +123,7 @@ a {
   height: 45px;
   width: auto;
   top: 70%;
-  left: 36.5%;
+  left: 34%;
 }
 
 .paw2 {
@@ -131,7 +131,7 @@ a {
   height: 45px;
   width: auto;
   top: 70%;
-  right: 36.5%;
+  right: 34%;
 }
 
 .chall-name {
@@ -289,6 +289,7 @@ a {
 
 .wave {
   position: relative;
+  background-size: cover;
   width: 1440px;
   height: 320px;
   margin-top: -170px;
@@ -338,20 +339,16 @@ a {
   }
 }
 
-.slide-left {
-  animation: slideLeft 5s;
-  animation-timeline: view();
-}
-
 @keyframes slideLeft {
+
   0% {
     opacity: 0;
-    translate: none;
+    translate: -600px 0px;
   }
 
-  70% {
+  50% {
     opacity: 1;
-    translate: 300px;
+    translate: none;
   }
 }
 
@@ -371,7 +368,7 @@ a {
     translate: -100px;
   }
 
-  30% {
+  25% {
     opacity: 1;
     translate: 10px;
   }
@@ -452,9 +449,19 @@ a {
   align-items: center;
   background-color: #d6e4fe;
 }
+.peaking {
+  position: absolute;
+  left: -10%;
+  margin-top:0;
+  height: 35vw;
+  width: auto;
+  z-index: 1;
+  animation: slideLeft 5s;
+  animation-timeline: view();
+}
 
 .about-box {
-  width: 85%;
+  width: 85vw;
   height: 50%;
   margin-left: 14%;
   margin-right: auto;
@@ -465,7 +472,7 @@ a {
 }
 
 .title-about {
-  font-size: 30px;
+  font-size:200%;
   text-align: left;
   margin-left: 2.5%;
   margin-bottom: -40px;
@@ -478,26 +485,17 @@ a {
   height: auto;
 }
 
-.peaking {
-  position: absolute;
-  left: -625px;
-  margin-top: -17%;
-  height: 500px;
-  width: auto;
-}
-
 .about-wrapper {
   margin-left: 2.5%;
   margin-right: auto;
-  width: 1150px;
+  width: 75vw;
   height: 300px;
-  font-size: 15px;
+  font-size: 85%;
   text-align: left;
   font-family: "Tenor Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 150%;
-
 }
 
 /*robot*/
@@ -511,9 +509,10 @@ a {
 }
 
 .robot-img {
-  background-size:1440px;
-  width: 1440px;
-  height: 500px;
+  background-size:100%;
+  width: 100%;
+  height: 140%;
+  margin-top: 45%;
   position: absolute;
   background-image: url(img/robot-img.png);
   background-repeat:no-repeat;
@@ -576,12 +575,16 @@ a {
 }
 
 .team-img {
-  width: 1280px;
-  height: 855px;
+  width: 100%;
+  height: 140%;
   position: absolute;
-  margin-left: -3%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: -13%;
   background-image: url(img/team.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
   z-index: 1;
   animation: fadeIn 5s;
   animation-timeline: view();
@@ -602,7 +605,7 @@ a {
 }
 .arrow {
   position: absolute;
-  width: 75px;
+  width:7%;
   height: auto;
   margin-top: -1.5%;
   left: 9%;
@@ -627,11 +630,24 @@ a {
   animation: slideIn 5s;
   animation-timeline: view();
 }
+.title-sponsor {
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: -40px;
+  color: #1a355c;
+}
+
+#sponsor .squiggle {
+  margin-left: 56%;
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
 .tom-brothers{
   background-size:400px;
   height: 235px;
   width: 1042px;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-left: 15%;
   position: absolute;
   background-image: url(img/Tom-Brothers.png);
@@ -644,7 +660,7 @@ a {
   background-size:200px;
   height: 200px;
   width: 200px;
-  margin-top: 11%;
+  margin-top: 6%;
   margin-left: 60%;
   position: absolute;
   background-image: url(img/bethune.png);
@@ -653,12 +669,7 @@ a {
   animation: fadeIn 5s;
   animation-timeline: view();
 }
-.title-sponsor {
-  font-size: 27px;
-  text-align: center;
-  margin-bottom: -40px;
-  color: #1a355c;
-}
+
 
 /*contact*/
 #contact {
@@ -684,7 +695,7 @@ a {
 .title-contact {
   font-size: 25px;
   margin-left: 20%;
-  margin-bottom: -40px;
+  margin-bottom: -3%;
   color: #1a355c;
   
 }
